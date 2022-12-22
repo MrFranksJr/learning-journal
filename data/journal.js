@@ -38,6 +38,7 @@ function responsiveMenu() {
 
 //-----------------------------------------------------------------------------------------------------------//
 
+//------------------------------------------ PAGE BUILDING ------------------------------------------//
 function collectArticles(articles) {
     let articleGrid = ''
     let heroArticleHTML = ''
@@ -48,7 +49,7 @@ function collectArticles(articles) {
                     <img class="article-img" src="${article.imagePath}">
                     <div class="article-text">
                         <p class="article-date">${article.date}</p>
-                        <h2 class="article-title">${article.title}</h2>
+                        <h3 class="article-title">${article.title}</h2>
                         <p class="article-content">${article.content}</p>
                         <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
                     </div>
@@ -59,10 +60,12 @@ function collectArticles(articles) {
             heroArticleHTML = `
             <section>
                 <article class="${article.articleType}">
+                <div class="hero-container">
                     <p class="article-date">${article.date}</p>
                     <h2 class="article-title">${article.title}</h2>
                     <p class="article-content">${article.content}</p>
                     <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
+                </div>
                 </article>
             </section>
             `
