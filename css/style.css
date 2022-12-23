@@ -8,7 +8,8 @@ body {
 }
 body.locked {
     margin: 0; 
-    height: 100%;
+    height: 100%; 
+    overflow: -moz-hidden-unscrollable;
 }
 
 /*-------------------- reset --------------------*/
@@ -141,9 +142,6 @@ li a {
     text-underline-offset: 0.3125rem;
     font-weight: 600;
 }
-.nav-link.active:hover {
-    color: #FF6663;
-}
 
 .active {
     display: block;
@@ -190,7 +188,7 @@ h2 {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 0.5rem;
-    color: #BFD7EA;
+    color: #E0FF4F;
 }
 
 .hero-article,
@@ -205,7 +203,7 @@ h2 {
     gap: 1rem;
     max-width: 1055px;
     box-sizing: border-box;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
 }
 
 .regular-article {
@@ -285,9 +283,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BFD7EA;
+    background-color: #FF6663;
     font-size: 0.9em;
-    color: #FF6663;
+    color: #0B3954;
     min-height: 50px;
     font-family: 'Roboto', sans-serif;
 }
