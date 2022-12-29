@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>Franky's Personal Site</title>
         <link rel="stylesheet" href="css/style.css">
@@ -8,10 +9,7 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/apple-touch.png">
         <!-- Google stuff -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -48,10 +46,41 @@
                 </div>
             </nav>
         </header>
-        <main id="mainCont">
-            <div id="loading">Content loading...</div>
+        <main id="mainCont" class="introCont">
+            <div class="introductionLeft">
+                <h2 class="welcomeTitle"><span class="strong">Welcome</span> to my <span class="strong">coding journal</span></h2>
+            </div>
+            <div class="introductionRight">
+                <img class="profilePic" src="images/DevProfilePic.jpg" alt="franky chilling out and smiling at the camera">
+                <h1 class="introTitle">Hi, I'm Franky 👋</h1>
+                <h3 class="introSubTitle">an aspiring front-end developer from Ghent, Belgium</h3>
+                <div class="textCollection">
+                    <p class="introText">
+                        Hello visitor, and welcome to my personal page!
+                    </p>
+                    <p class="introText">
+                        This spot on the internet will serve not only as my personal testing-ground / portfolio, but also as my <a href="pages/journal.html" alt="go to my journal" class="homeLink">diary</a> of my journey into coding.
+                    </p>
+                    <p class="introText">
+                        I'm currently following a course over at <a class="homeLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a> and I'm intending on documenting my trip through the course quite thoroughly. Both from the perspective of my personal experience, as well as from a technical point-of-view.<br><br>Expect to read about the new things I learnt, about my struggles but also about what went easy.<br>Expect to read about the extras I implemented but also about bigger ideas that I had and inevitably had to abandon because of time-constraints 😂
+                    </p>
+                    <p class="introText">
+                        I also invite you to read up on <a href="pages/mystory.html" alt="go to my story" class="homeLink">My Story</a>. You'll learn how I got where I am today and why I'm moving in the direction I am.
+                    </p>
+                    <p class="introText">
+                        There will be a <a href="pages/portfolio.html" alt="go to my portfolio" class="homeLink">Portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along hte way.
+                    </p>
+                    <p class="introText">
+                        Finally, there's a <a href="pages/contact.html" alt="go to contact me" class="homeLink">contact</a> page where you'll find the different ways to get in touch with me, as well as my GitHub (which was my previous diary spot).
+                    </p>
+                    <p class="introText">
+                        Cheers! Happy Coding!<br>
+                        Franky
+                    </p>
+                </div>
+            </div>
         </main>
-        <footer>
+        <footer class="homeFooter">
             &copy;2022 &#8212; Franky Jr Blondeel
         </footer>
         <script src="index.js" type="module"></script>       

@@ -1,6 +1,4 @@
 //------------------------------------------CONSTS------------------------------------------//
-import { articles } from '/data/articles.js'
-import { easterEgg } from '/data/data.js'
 const hamburgerMenu = document.getElementById('hamburger')
 const navMenu = document.getElementById('nav-menu')
 const allArticles = document.getElementsByTagName('article')
@@ -37,38 +35,3 @@ function responsiveMenu() {
 }
 
 //-----------------------------------------------------------------------------------------------------------//
-
-function collectArticles(articles) {
-    let articleGrid = ''
-    let heroArticleHTML = ''
-    for (let article of articles) {
-        if (article.articleType === 'regular-article') {
-            let articleHTML = `
-                <article class="${article.articleType}">
-                    <img class="article-img" src="${article.imagePath}">
-                    <div class="article-text">
-                        <p class="article-date">${article.date}</p>
-                        <h2 class="article-title">${article.title}</h2>
-                        <p class="article-content">${article.content}</p>
-                        <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
-                    </div>
-                </article>
-            `
-            articleGrid += articleHTML
-        } else {
-            heroArticleHTML = `
-            <section>
-                <article class="${article.articleType}">
-                    <p class="article-date">${article.date}</p>
-                    <h2 class="article-title">${article.title}</h2>
-                    <p class="article-content">${article.content}</p>
-                    <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
-                </article>
-            </section>
-            `
-        }
-    }
-    mainCont.innerHTML = easterEgg + heroArticleHTML + '<section class="reg-art-section">' + articleGrid + '</section>'
-}
-
-collectArticles(articles)

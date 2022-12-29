@@ -1,6 +1,7 @@
 //------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles.js'
 import { easterEgg } from '/data/data.js'
+
 const hamburgerMenu = document.getElementById('hamburger')
 const navMenu = document.getElementById('nav-menu')
 const allArticles = document.getElementsByTagName('article')
@@ -19,7 +20,6 @@ hamburgerMenu.addEventListener("click", responsiveMenu)
 document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", () => {
     hamburgerMenu.classList.remove("active")
     navMenu.classList.remove("active")
-    document.body.classList.remove("locked")
     footerCont[0].classList.remove("blur")
     for (let i = 0; i < allArticles.length; i++) {
         allArticles[i].classList.remove("blur")
@@ -28,7 +28,6 @@ document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", 
 
 function responsiveMenu() {
         navMenu.classList.toggle("active")
-        document.body.classList.toggle("locked")
         hamburgerMenu.classList.toggle("active")
         footerCont[0].classList.toggle("blur")
         for (let i = 0; i < allArticles.length; i++) {
@@ -59,7 +58,7 @@ function collectArticles(articles) {
         } else {
             heroArticleHTML = `
             <section>
-                <article class="${article.articleType}">
+                <article class="${article.articleType}" id="hero-article">
                 <div class="hero-container">
                     <p class="article-date">${article.date}</p>
                     <h2 class="article-title">${article.title}</h2>
@@ -72,6 +71,7 @@ function collectArticles(articles) {
         }
     }
     mainCont.innerHTML = easterEgg + heroArticleHTML + '<section class="reg-art-section">' + articleGrid + '</section>'
+    document.getElementById('hero-article').style.backgroundImage = 'url(../images/DeskMain.jpg)'
 }
 
 collectArticles(articles)
