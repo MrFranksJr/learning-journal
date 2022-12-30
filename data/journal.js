@@ -50,7 +50,7 @@ function collectArticles(articles) {
                         <p class="article-date">${article.date}</p>
                         <h3 class="article-title">${article.title}</h2>
                         <p class="article-content">${article.content}</p>
-                        <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
+                        <p class="read-more"><a href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a></p>
                     </div>
                 </article>
             `
@@ -63,7 +63,7 @@ function collectArticles(articles) {
                     <p class="article-date">${article.date}</p>
                     <h2 class="article-title">${article.title}</h2>
                     <p class="article-content">${article.content}</p>
-                    <p class="read-more"><a href="/pages/article${article.id}.html" alt="read the full article">Read more</a></p>
+                    <p class="read-more"><a href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a></p>
                 </div>
                 </article>
             </section>

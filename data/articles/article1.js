@@ -4,7 +4,7 @@ export const article1 =
         title: 'My first article',
         date: 'DECEMBER 16, 2022',
         articleType: 'regular-article',
-        imagePath: '../images/article-image-02.png',
+        imagePath: '../images/deskside.jpg',
         content: `Fusce sagittis et enim eget tempus. Proin sit amet risus elit. Etiam tempus tellus eget ultrices lobortis. Pellentesque magna mauris, imperdiet sit amet tellus ut, sollicitudin maximus ante. Vivamus lacinia, lectus in dapibus eleifend, elit odio porttitor dui, non posuere urna ex tincidunt nibh. Nunc scelerisque porta sapien eget aliquet. Pellentesque malesuada a lacus eu tristique. Donec sed urna finibus, dapibus nisl vel, consectetur risus. In mollis gravida felis iaculis condimentum.
         
         Vestibulum pretium odio vel turpis gravida sollicitudin. Duis malesuada, tellus ac mollis hendrerit, tortor erat consectetur purus, eget egestas metus enim dictum lorem. Maecenas tempor diam vitae eros molestie commodo. Quisque molestie ultrices dolor, congue fermentum libero hendrerit quis. Integer hendrerit consectetur tellus in scelerisque. Donec id cursus orci. Integer euismod, tellus pulvinar finibus lacinia, ipsum ipsum aliquet ante, a gravida neque nibh vel nunc. Duis at tortor vel est tempor bibendum ac et odio.
