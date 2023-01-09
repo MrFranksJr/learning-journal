@@ -56,31 +56,29 @@ export const article1 =
         <img class="article-main-img" src="${articleImage}">
 
         <p class="articleText">
-        The following were the base requirements of the assignment:
+        The following were the base requirements of the assignment:</p>
         <ul class='articleList'>
             <li>Create a simple button that read content from the input field available</li>
             <li>Create a button that reads the URL of the visible active tab and store it</li>
             <li>Store the data in the 'backend' localstorage</li>
             <li>Make the data visible in a &lt;ul&gt;</pre> </li>
         </ul>
-        </p>
 
         <p class="articleText">
         All of the goals above were achieved, but I went a little bit beyond.
         </p>
 
         <p class="articleText">
-        Extra goals that I achieved:
+        Extra goals that I achieved:</p>
         <ul class='articleList'>
             <li>When hovering over the items, you can delete items one-by-one. It was a little bit tricky, but managed in the end.</li>
             <li>An automated check for HTTP or HTTPS in the input field. Because this extension runs locally, and when you leave out HTTP, the link posted in the list would actually not work correctly. So, before adding the Input value to the list, HTTPS is added when HTTP or HTTPS is missing from the string</li>
             <li>Added a function to detect the return key. It just makes life easier to just hit return and add your item to the list!</li>
         </ul>
-        </p>
 
         <h2 class="sub-title">Development</h2>
         <p class="articleText">
-        The most important part of this exercise was learning to create better, cleaner JS (I feel). Things included:
+        The most important part of this exercise was learning to create better, cleaner JS (I feel). Things included:</p>
         <ul class='articleList'>
             <li>Working better with arrays </li>
             <li>Working with the LocalStorage (laying the groundwork for future backend/database interaction I assume) </li>
@@ -91,7 +89,6 @@ export const article1 =
             <li>Template strings! Amazing way of writing HTML inside your JS, and escaping out of the string using \${}</li>
             <li>Touching on JSON, used a lot in webdevelopment when storing/handling data</li>
         </ul>
-        </p>
 
         <h2 class="sub-title">Conclusion</h2>
         <p class="articleText">
