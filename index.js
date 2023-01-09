@@ -34,8 +34,9 @@ function responsiveMenu() {
         }
 }
 
-function getYear() {
-    
+function getCurrentYear() {
+    document.getElementById('year').innerHTML = new Date().getFullYear();
 }
 
-//-----------------------------------------------------------------------------------------------------------//
+//------------------------------------------ functions to execute------------------------------------------//
+getCurrentYear()

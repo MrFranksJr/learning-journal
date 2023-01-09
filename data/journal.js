@@ -71,7 +71,7 @@ function collectArticles(articles) {
         }
     }
     mainCont.innerHTML = easterEgg + heroArticleHTML + '<section class="reg-art-section">' + articleGrid + '</section>'
-    document.getElementById('hero-article').style.backgroundImage = 'url(../images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg)'
+    document.getElementById('hero-article').style.backgroundImage = 'url(../images/hero-article/DeskMain.jpg)'
 }
 
 collectArticles(articles)

@@ -60,15 +60,6 @@ header a {
 }
 
 /*-------------------- NAV --------------------*/
-li {
-    list-style: none;
-}
-
-li a {
-    color: #fefffe;
-    text-decoration: none;
-}
-
 .navbar {
     height: 100%;
     display: flex;
@@ -123,6 +114,7 @@ li a {
 
 .nav-item {
     height: 50px;
+    list-style: none;
 }
 
 .nav-menu.active {
@@ -183,7 +175,6 @@ article,
 }
 
 .hero-article {
-    /* background-image: url(../images/article-image-hero.png); */
     min-height: 280px;
     justify-content: flex-end;
     padding: 1.5rem;

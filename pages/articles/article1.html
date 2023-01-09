@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>My Story - Franky's Learning Journal</title>
+        <title>Franky's Coding Journal</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/articles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
         <link rel="apple-touch-icon" href="/images/apple-touch.png">
@@ -27,10 +28,10 @@
                         <a href="/index.html" class="nav-link" alt='home'><i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/journal.html" class="nav-link" alt='Journal'>Journal</a>
+                        <a href="/pages/journal.html" class="nav-link active" alt='Journal'>Journal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/mystory.html" class="nav-link active" alt='my story'>My story</a>
+                        <a href="/pages/mystory.html" class="nav-link" alt='my story'>My story</a>
                     </li>
                     <li class="nav-item">
                         <a href="/pages/mywork.html" class="nav-link" alt='my work'>My work</a>
@@ -46,12 +47,15 @@
                 </div>
             </nav>
         </header>
-        <main id="mainCont" class="introCont">
-            <h2 class="welcomeTitle">My Story</h2>
+        <main id="mainCont" class="article-main">
+            <article class="article-body" id="article-body" data-id="1">
+                <p class="loading">Loading content...</p>
+            </article>
         </main>
         <footer>
-            &copy;2022 &#8212; Franky Jr Blondeel
+            &copy;<span id="year"></span> &#8212; Franky Jr Blondeel
         </footer>
-        <script src="/index.js" type="module"></script>       
+        <script src="/index.js" type="module"></script> 
+        <script src="/data/article-builder.js" type="module"></script> 
     </body>
 </html>

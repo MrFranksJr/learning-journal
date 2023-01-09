@@ -1,10 +1,14 @@
+const articleDate = 'December 22, 2022'
+const articleTitle = 'Welcome to my Coding Journal'
+const articleImage = '/images/hero-article/DeskMain.jpg'
+
 export const heroArticle =
     {
         id: 0,
-        title: 'Welcome to my Coding Journal',
-        date: 'December 16, 2022',
+        title: articleTitle,
+        date: articleDate,
         articleType: 'hero-article',
-        imagePath: '../images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg',
+        imagePath: articleImage,
         content: `
             Hello visitor, and welcome to my personal page!<br>
             This spot on the internet will serve not only as my personal testing-ground / portfolio, but also as my diary of my journey into coding.
@@ -20,6 +24,11 @@ export const heroArticle =
             Cheers! Happy Coding!<br>
             Franky`,
         html: `
+        <div class='date-back-block'>
+            <p class="date">${articleDate}</p>
+            <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
+        </div>
+        <h1 class="main-title">${articleTitle}</h1>
         <h2 class="sub-title">Hi 👋 I'm Franky,<br> an aspiring front-end developer from Ghent, Belgium</h1>
     
         <p class="articleText">
@@ -27,7 +36,7 @@ export const heroArticle =
             This spot on the internet will serve not only as my personal testing-ground / portfolio, but also as my <a href="/pages/journal.html" alt="go to my journal" class="articleLink">diary</a> of my journey into coding.
         </p>
 
-        <img class="article-main-img" src="/images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg">
+        <img class="article-main-img" src="${articleImage}">
         
         <p class="articleText">
             I'm currently following a course over at <a class="articleLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a> and I'm intending on documenting my trip through the course quite thoroughly. Both from the perspective of my personal experience, as well as from a technical point-of-view.<br><br>Expect to read about the new things I learnt, about my struggles but also about what went easy.<br>Expect to read about the extras I implemented but also about bigger ideas that I had and inevitably had to abandon because of time-constraints 😂
