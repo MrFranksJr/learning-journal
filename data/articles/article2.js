@@ -96,9 +96,9 @@ export const article2 =
                     <li>When clicking the heart- icon, the system shows a string 'You and XXX others like this' and later revert to the sum of all Like</li>
                     <li>'Over-liking' is not possible. It is possible to unlike a picture when clicking the heart again</li>
                 </ul>
-                <img class="article-main-img" id='oldagram-img' src="/images/article2/like-system1.jpg">
-                <img class="article-main-img" id='oldagram-img' src="/images/article2/like-system2.jpg">
-                <img class="article-main-img" id='oldagram-img' src="/images/article2/like-system3.jpg">
+                <img class="list-img" src="/images/article2/like-system1.jpg">
+                <img class="list-img" src="/images/article2/like-system2.jpg">
+                <img class="list-img" src="/images/article2/like-system3.jpg">
             </li>
             <li>The posts themselves are initially loaded in from an array of Objects. However, the first thing I do is store all posts inside the LocalStorage.
                 <ul>

@@ -3,12 +3,14 @@
 }
 
 .article-body {
-    margin: 0 auto;
+    margin: 10px;
+    border-radius: 5px;
     display: flex;
     width: 100%;
     padding: 1.25rem;
     box-sizing: border-box;
     max-width: 1055px;
+    /* background-color: #fefffe; */
 }
 
 .date-back-block {
@@ -64,6 +66,7 @@ a.date:focus {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.4375rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .loading {
@@ -76,10 +79,15 @@ a.date:focus {
 }
 
 .articleList {
-    list-style-type: circle;
+    list-style-type: disc;
     padding-left: 2.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li ul {
+    padding-left: 2.5rem;
 }
 
 .articleList li:marker {
@@ -89,6 +97,13 @@ a.date:focus {
 #oldagram-img {
     max-width: 500px;
     margin: 0 auto 2.1875rem;
+}
+
+.list-img {
+    display: block;
+    margin: 0.8rem auto;
+    width: 100%;
+    max-width: 500px;
 }
 
 /*-------------------- MEDIA QUERIES --------------------*/

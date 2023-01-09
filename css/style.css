@@ -397,7 +397,7 @@ footer {
     }
 }
 
-@media (min-width:810px) {
+@media (min-width:880px) {
     .hamburger {
         display: none;
     }
@@ -607,3 +607,4 @@ footer.blur {
     filter: blur(0.2rem);
     pointer-events: none;
 }
+
