@@ -1,9 +1,6 @@
 const articleDate = 'October 26, 2022'
 const articleTitle = 'Oldagram - Instagram Clone'
 const articleImage = '/images/article2/app_screen.jpg'
-const inArticleImage = '/images/article2/app_screen_full.jpg'
-
-
 
 export const article2 =
     {
@@ -61,7 +58,7 @@ export const article2 =
         The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
         </p>
 
-        <img class="article-main-img" id='oldagram-img' src="${inArticleImage}">
+        <img class="article-main-img" id='oldagram-img' src="/images/article2/app_screen_full.jpg">
 
         <p class="articleText">
             The assignment was mostly an exercise in CSS. But I definitely decided to keep on practicing my Javascript and applied a lot of the functionality we practiced in some of the previous lessons.
@@ -83,7 +80,7 @@ export const article2 =
             <li>Use Javascript to render out all three posts</li>
             <li>Increase the likes when double clicking the post</li>
         </ul>
-        <img class="article-main-img" src="images/article2/stretch-goals.png">
+        <img class="article-main-img" src="/images/article2/stretch-goals.png">
 
         <p class="articleText">
             It was a given that I wanted to immediately render all posts using Javascript... All posts are coming from an array of Objects.
@@ -115,7 +112,7 @@ export const article2 =
         </ul>
 
         <h2 class="sub-title">Conclusion</h2>
-        
+
         <p class="articleText">
         This was by far the most fun application to build. Both from a technical as a creative perspective. I feel like I'm quickly improving on many different fronts, further proving it is important to program every day, even if it's just a couple of lines ;)
         </p>

@@ -1,1 +1,1 @@
-export const easterEgg = `<img class="easter-egg" src="../images/japcat.png" alt="easter egg!!"></img>`
+export const easterEgg = `<img class="easter-egg" src="/images/japcat.png" alt="easter egg!!"></img>`

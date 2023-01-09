@@ -1,10 +1,15 @@
+const articleDate = 'October 17, 2022'
+const articleTitle = 'Random Password Generator'
+const articleImage = '/images/article3/frbl-pw-generator_16.jpg'
+
+
 export const article3 =
     {
         id: 3,
-        title: 'My third article',
-        date: 'DECEMBER 23, 2022',
+        title: articleTitle,
+        date: articleDate,
         articleType: 'regular-article',
-        imagePath: '../images/article-image-02.png',
+        imagePath: articleImage,
         content: `Fusce sagittis et enim eget tempus. Proin sit amet risus elit. Etiam tempus tellus eget ultrices lobortis. Pellentesque magna mauris, imperdiet sit amet tellus ut, sollicitudin maximus ante. Vivamus lacinia, lectus in dapibus eleifend, elit odio porttitor dui, non posuere urna ex tincidunt nibh. Nunc scelerisque porta sapien eget aliquet. Pellentesque malesuada a lacus eu tristique. Donec sed urna finibus, dapibus nisl vel, consectetur risus. In mollis gravida felis iaculis condimentum.
         
         Vestibulum pretium odio vel turpis gravida sollicitudin. Duis malesuada, tellus ac mollis hendrerit, tortor erat consectetur purus, eget egestas metus enim dictum lorem. Maecenas tempor diam vitae eros molestie commodo. Quisque molestie ultrices dolor, congue fermentum libero hendrerit quis. Integer hendrerit consectetur tellus in scelerisque. Donec id cursus orci. Integer euismod, tellus pulvinar finibus lacinia, ipsum ipsum aliquet ante, a gravida neque nibh vel nunc. Duis at tortor vel est tempor bibendum ac et odio.

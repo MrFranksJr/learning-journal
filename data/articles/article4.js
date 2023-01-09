@@ -1,3 +1,8 @@
+const articleDate = 'October 26, 2022'
+const articleTitle = 'Oldagram - Instagram Clone'
+const articleImage = '/images/article3/app_screen.jpg'
+
+
 export const article4 =
     {
         id: 4,
