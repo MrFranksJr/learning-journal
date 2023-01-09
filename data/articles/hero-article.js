@@ -2,16 +2,48 @@ export const heroArticle =
     {
         id: 0,
         title: 'Welcome to my Coding Journal',
-        date: 'December 29, 2022',
+        date: 'December 16, 2022',
         articleType: 'hero-article',
-        imagePath: '../images/DeskMain.jpg',
-        content: `Fusce sagittis et enim eget tempus. Proin sit amet risus elit. Etiam tempus tellus eget ultrices lobortis. Pellentesque magna mauris, imperdiet sit amet tellus ut, sollicitudin maximus ante. Vivamus lacinia, lectus in dapibus eleifend, elit odio porttitor dui, non posuere urna ex tincidunt nibh. Nunc scelerisque porta sapien eget aliquet. Pellentesque malesuada a lacus eu tristique. Donec sed urna finibus, dapibus nisl vel, consectetur risus. In mollis gravida felis iaculis condimentum.
+        imagePath: '../images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg',
+        content: `
+            Hello visitor, and welcome to my personal page!<br>
+            This spot on the internet will serve not only as my personal testing-ground / portfolio, but also as my diary of my journey into coding.
+    
+            I'm currently following a course over at <a class="articleLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a> and I'm intending on documenting my trip through the course quite thoroughly. Both from the perspective of my personal experience, as well as from a technical point-of-view.<br><br>Expect to read about the new things I learnt, about my struggles but also about what went easy.<br>Expect to read about the extras I implemented but also about bigger ideas that I had and inevitably had to abandon because of time-constraints 😂
+
+            I also invite you to read up on <a href="/pages/mystory.html" alt="go to my story" class="articleLink">My Story</a>. You'll learn how I got where I am today and why I'm moving in the direction I am.
+
+            There will be a <a href="/pages/portfolio.html" alt="go to my portfolio" class="articleLink">Portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
+
+            Finally, there's a <a href="/pages/contact.html" alt="go to contact me" class="articleLink">contact</a> page where you'll find the different ways to get in touch with me, as well as my GitHub (which was my previous diary spot).
+
+            Cheers! Happy Coding!<br>
+            Franky`,
+        html: `
+        <h2 class="sub-title">Hi 👋 I'm Franky,<br> an aspiring front-end developer from Ghent, Belgium</h1>
+    
+        <p class="articleText">
+            Hello visitor, and welcome to my personal page!<br><br>
+            This spot on the internet will serve not only as my personal testing-ground / portfolio, but also as my <a href="/pages/journal.html" alt="go to my journal" class="articleLink">diary</a> of my journey into coding.
+        </p>
+
+        <img class="article-main-img" src="/images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg">
         
-        Vestibulum pretium odio vel turpis gravida sollicitudin. Duis malesuada, tellus ac mollis hendrerit, tortor erat consectetur purus, eget egestas metus enim dictum lorem. Maecenas tempor diam vitae eros molestie commodo. Quisque molestie ultrices dolor, congue fermentum libero hendrerit quis. Integer hendrerit consectetur tellus in scelerisque. Donec id cursus orci. Integer euismod, tellus pulvinar finibus lacinia, ipsum ipsum aliquet ante, a gravida neque nibh vel nunc. Duis at tortor vel est tempor bibendum ac et odio.
-        
-        Vestibulum pharetra dolor metus, et placerat quam malesuada sed. Cras finibus enim quis sollicitudin ultrices. Curabitur pretium rutrum metus, vitae facilisis dui fermentum fermentum. Duis pellentesque odio quis lobortis varius. Ut id turpis sagittis, lobortis massa eget, congue quam. Suspendisse sed risus metus. In gravida eu lacus vitae eleifend. Sed congue diam sed ex convallis, a luctus felis pulvinar. Integer sagittis maximus justo.
-        
-        Ut finibus fringilla elit. Duis magna augue, sollicitudin in rutrum vitae, facilisis quis purus. Pellentesque vitae massa tincidunt, euismod lorem vel, ornare risus. Vestibulum vestibulum auctor leo, vel pellentesque purus. Morbi eu tellus ligula. Phasellus cursus nisl ex. Nulla rhoncus neque sapien, nec finibus ipsum ornare vel. Nunc fermentum ut felis in scelerisque. Aenean convallis purus in commodo consectetur. Curabitur ullamcorper tortor dictum erat ultricies, nec mattis mi tincidunt. Donec bibendum dui at sapien egestas fermentum. Aenean sed enim vel est posuere aliquam. Phasellus quis aliquam mauris.
-        
-        Pellentesque euismod quam vel mauris aliquet euismod. Suspendisse potenti. In placerat blandit metus a tincidunt. Mauris fermentum pulvinar sodales. Nullam at ex id velit aliquam tempus sed faucibus eros. Pellentesque ullamcorper ultrices hendrerit. Curabitur ultrices felis quis lacinia fermentum. Aenean feugiat tempor dui. Integer quis nunc dignissim, semper ex in, pretium neque. Sed vel sem at arcu cursus iaculis. Quisque tellus orci, lobortis finibus finibus eget, aliquam quis nibh. Aenean sollicitudin aliquet ex, vehicula volutpat tortor. Praesent fringilla, nulla ut euismod faucibus, odio sem facilisis neque, nec luctus lacus ligula at orci. Cras eget molestie eros. Pellentesque pulvinar ipsum in eros laoreet pellentesque. Quisque semper dignissim tortor finibus porta.`
+        <p class="articleText">
+            I'm currently following a course over at <a class="articleLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a> and I'm intending on documenting my trip through the course quite thoroughly. Both from the perspective of my personal experience, as well as from a technical point-of-view.<br><br>Expect to read about the new things I learnt, about my struggles but also about what went easy.<br>Expect to read about the extras I implemented but also about bigger ideas that I had and inevitably had to abandon because of time-constraints 😂
+        </p>
+        <p class="articleText">
+            I also invite you to read up on <a href="/pages/mystory.html" alt="go to my story" class="articleLink">My Story</a>. You'll learn how I got where I am today and why I'm moving in the direction I am.
+        </p>
+        <p class="articleText">
+            There will be a <a href="/pages/portfolio.html" alt="go to my portfolio" class="articleLink">Portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
+        </p>
+        <p class="articleText">
+            Finally, there's a <a href="/pages/contact.html" alt="go to contact me" class="articleLink">contact</a> page where you'll find the different ways to get in touch with me, as well as my GitHub (which was my previous diary spot).
+        </p>
+        <p class="articleText">
+            Cheers! Happy Coding!<br>
+            Franky
+        </p>
+        `
     }

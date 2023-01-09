@@ -1,5 +1,5 @@
 //------------------------------------------CONSTS------------------------------------------//
-import { articles } from '/data/articles.js'
+import { articles } from '/data/articles-collection.js'
 import { easterEgg } from '/data/data.js'
 
 const hamburgerMenu = document.getElementById('hamburger')
@@ -50,7 +50,7 @@ function collectArticles(articles) {
                         <p class="article-date">${article.date}</p>
                         <h3 class="article-title">${article.title}</h2>
                         <p class="article-content">${article.content}</p>
-                        <p class="read-more"><a href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a></p>
+                        <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
                     </div>
                 </article>
             `
@@ -63,7 +63,7 @@ function collectArticles(articles) {
                     <p class="article-date">${article.date}</p>
                     <h2 class="article-title">${article.title}</h2>
                     <p class="article-content">${article.content}</p>
-                    <p class="read-more"><a href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a></p>
+                    <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
                 </div>
                 </article>
             </section>
@@ -71,7 +71,7 @@ function collectArticles(articles) {
         }
     }
     mainCont.innerHTML = easterEgg + heroArticleHTML + '<section class="reg-art-section">' + articleGrid + '</section>'
-    document.getElementById('hero-article').style.backgroundImage = 'url(../images/DeskMain.jpg)'
+    document.getElementById('hero-article').style.backgroundImage = 'url(../images/8814537e-9e7c-4ac5-9559-b4d259eacc27.jpg)'
 }
 
 collectArticles(articles)
