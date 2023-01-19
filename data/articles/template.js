@@ -24,11 +24,12 @@ export const article4 =
         <p class="articleText">
         Live version <a href='https://frbl-in-emojis.netlify.app/' target='_blank' class="articleLink">here</a>
         </p>
+        <ul class='articleList'>
+            <li>Create the first post</li>
+            <li>Use semantic HTML</li>
+            <li>Add hover effects on the icons (Like, Comment, Share)</li>
+        </ul>
 
-        <p class="articleText">
-        I will not spend too much time elaborating on this particular project, it was a simple exercise on adding and removing items from an array in JavaScript, but with Emojis :) Go and give it a spin!
-        </p>
-
-        <img class="article-main-img" src="/images/article4/my-emojis.jpg">
+        <img class="article-main-img" src="/images/article5/requirements.png">
         `
     }

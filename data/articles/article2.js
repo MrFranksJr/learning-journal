@@ -10,7 +10,7 @@ export const article2 =
         articleType: 'regular-article',
         imagePath: articleImage,
         content: `
-        What if well known artists from times past, were able to take selfies?
+        what if well known artists from times past, were able to take selfies?
 
         The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
         
@@ -50,7 +50,7 @@ export const article2 =
             <p class="date">${articleDate}</p>
             <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
         </div>
-        <h1 class="main-title">My Shopping List - First Chrome Extension</h1>
+        <h1 class="main-title">${articleTitle}</h1>
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">

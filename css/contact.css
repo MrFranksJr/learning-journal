@@ -1,0 +1,23 @@
+.contactCont {
+    padding-top: 60px;
+}
+
+h1 {
+    displ
+    margin: 0;
+}
+
+/*-------------------- MEDIA QUERIES --------------------*/
+@media (min-width:992px) {
+    .article-main {
+        margin-top: 80px;
+    }
+    .main-title {
+        margin: 1rem 0 1.5rem;
+        font-size: 3rem;
+    }
+    .sub-title {
+        font-size: 2rem;
+        margin-bottom: 2.2rem;
+    }
+}

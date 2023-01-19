@@ -9,7 +9,6 @@ const footerCont = document.getElementsByTagName('footer')
 const headerCont = document.getElementsByTagName('header')
 const mainCont = document.getElementById('mainCont')
 
-
 //------------------------------------------ MENU WORKINGS + STYLINGS------------------------------------------//
 window.addEventListener('click', function(e){
     if (!headerCont[0].contains(e.target) && hamburgerMenu.classList.contains('active')){
@@ -34,6 +33,9 @@ function responsiveMenu() {
             allArticles[i].classList.toggle("blur")
         }
 }
+
+document.getElementById('year').innerHTML = new Date().getFullYear()
+
 
 //-----------------------------------------------------------------------------------------------------------//
 

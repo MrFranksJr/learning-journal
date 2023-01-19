@@ -4,7 +4,6 @@ const navMenu = document.getElementById('nav-menu')
 const allArticles = document.getElementsByTagName('article')
 const footerCont = document.getElementsByTagName('footer')
 const headerCont = document.getElementsByTagName('header')
-const mainCont = document.getElementById('mainCont')
 
 
 //------------------------------------------ MENU WORKINGS + STYLINGS------------------------------------------//
@@ -34,9 +33,5 @@ function responsiveMenu() {
         }
 }
 
-function getCurrentYear() {
-    document.getElementById('year').innerHTML = new Date().getFullYear();
-}
-
 //------------------------------------------ functions to execute------------------------------------------//
-getCurrentYear()
+document.getElementById('year').innerHTML = new Date().getFullYear()

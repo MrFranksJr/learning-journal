@@ -45,8 +45,9 @@ a.date:focus {
 
 .article-main-img {
     width: 100%;
+    max-width: 600px;
     border-radius: 5px;
-    margin: 0 0 2.1875rem;
+    margin: 0 auto 2.1875rem;
 }
 
 .articleLink {
@@ -104,6 +105,13 @@ ul li ul {
     margin: 0.8rem auto;
     width: 100%;
     max-width: 500px;
+}
+
+.unit-img {
+    display: flex;
+    gap: 2em;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /*-------------------- MEDIA QUERIES --------------------*/

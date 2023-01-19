@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>Franky's Coding Journal</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/articles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
         <link rel="apple-touch-icon" href="/images/apple-touch.png">
@@ -24,10 +25,10 @@
             <nav class="navbar">
                 <ul class="nav-menu" id="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" alt='home'><i class="fa-solid fa-house active"></i></a>
+                        <a href="/index.html" class="nav-link" alt='home'><i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/journal.html" class="nav-link" alt='Journal'>Journal</a>
+                        <a href="/pages/journal.html" class="nav-link active" alt='Journal'>Journal</a>
                     </li>
                     <li class="nav-item">
                         <a href="/pages/mystory.html" class="nav-link" alt='my story'>My story</a>
@@ -46,27 +47,15 @@
                 </div>
             </nav>
         </header>
-        <main id="mainCont" class="introCont">
-            <div class="introductionLeft">
-                <h2 class="welcomeTitle"><span class="strong">Welcome</span> to my <span class="strong">coding journal</span></h2>
-            </div>
-            <div class="introductionRight">
-                <div>
-                    <img class="profilePic" src="/images/DevProfilePic.jpg" alt="franky chilling out and smiling at the camera">
-                    <h1 class="introTitle">Hi, I'm Franky 👋</h1>
-                    <h3 class="introSubTitle">an aspiring front-end developer from Ghent, Belgium</h3>
-                    <p class="introText">
-                        Read more about me, my journey, my work and how to get in touch with me.<br><br> Enjoy your stay!
-                    </p>
-                </div>
-                <div class="homeButtons">
-                    <a class="home-button" href="/pages/journal.html" alt="read the full article">Read my Journal</a>
-                    <a class="home-button" href="/pages/mystory.html" alt="read the full article">Read about my story</a>
-                    <a class="home-button" href="/pages/mywork.html" alt="read the full article">Check out my work</a>
-                    <a class="home-button" href="/pages/contact.html" alt="read the full article">Get in touch</a>
-                </div>
-            </div>
+        <main id="mainCont" class="article-main">
+            <article class="article-body" id="article-body" data-id="8">
+                <p class="loading">Loading content...</p>
+            </article>
         </main>
-        <script src="/index.js" type="module"></script>       
+        <footer>
+            &copy;<span id="year"></span> &#8212; Franky Jr Blondeel
+        </footer>
+        <script src="/index.js" type="module"></script> 
+        <script src="/data/article-builder.js" type="module"></script> 
     </body>
 </html>
