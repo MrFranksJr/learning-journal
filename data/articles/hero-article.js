@@ -17,7 +17,7 @@ export const heroArticle =
 
             I also invite you to read up on <a href="/pages/mystory.html" alt="go to my story" class="articleLink">My Story</a>. You'll learn how I got where I am today and why I'm moving in the direction I am.
 
-            There will be a <a href="/pages/portfolio.html" alt="go to my portfolio" class="articleLink">Portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
+            There will be a <a href="/pages/mywork.html" alt="go to my portfolio" class="articleLink">portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
 
             Finally, there's a <a href="/pages/contact.html" alt="go to contact me" class="articleLink">contact</a> page where you'll find the different ways to get in touch with me, as well as my GitHub (which was my previous diary spot).
 
@@ -45,7 +45,7 @@ export const heroArticle =
             I also invite you to read up on <a href="/pages/mystory.html" alt="go to my story" class="articleLink">My Story</a>. You'll learn how I got where I am today and why I'm moving in the direction I am.
         </p>
         <p class="articleText">
-            There will be a <a href="/pages/portfolio.html" alt="go to my portfolio" class="articleLink">Portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
+            There will be a <a href="/pages/mywork.html" alt="go to my portfolio" class="articleLink">portfolio</a> section too with any projects listed and linked that I have completed, as well as any assignments I might pick up for 'real' customers along the way.
         </p>
         <p class="articleText">
             Finally, there's a <a href="/pages/contact.html" alt="go to contact me" class="articleLink">contact</a> page where you'll find the different ways to get in touch with me, as well as my GitHub (which was my previous diary spot).

@@ -53,12 +53,12 @@ a.date:focus {
 .articleLink {
     color: #E0FF4F;
     text-decoration: none;
-    text-shadow: 0.1px 0.1px 5px #272020;
+    text-shadow: 0.1px 0.1px 1px #272020;
 }
 
 .articleLink:hover {
     background: linear-gradient(transparent 40%, #FF6663 41%, #FF6663 66%, transparent 67%);
-    background-position:2px -1px;
+    background-position:2px 4px;
     background-repeat:no-repeat;
 }
 
