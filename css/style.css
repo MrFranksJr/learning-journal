@@ -300,6 +300,7 @@ footer {
 .introductionLeft {
     padding: 5.25rem 1.5rem 1.5rem;
     height: 30vh;
+    min-height: 278px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,10 +318,10 @@ footer {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    padding: 3rem 2.5rem 2.5rem;
+    padding: 3rem 2.5rem;
     box-sizing: border-box;
     text-align: center;
-    height: 100%;
+    min-height: ;
 }
 
 .profilePic {
@@ -469,15 +470,15 @@ footer {
         flex-direction: row;
         height: 100%;
         margin-top: 60px;
+        height: calc(100vh - 60px);
     }
     .introductionLeft,
     .introductionRight {
         width: 50%;
-        height: calc(100vh - 60px);
+        height: 100%;
     }
     .introductionRight {
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         overflow-y: auto;
     }
     .homeButtons {
@@ -531,9 +532,6 @@ footer {
     /*--------- HOME PAGE -----------*/
     .introCont {
         margin-top: 80px;
-    }
-    .introductionLeft,
-    .introductionRight {
         height: calc(100vh - 80px);
     }
     .welcomeTitle {
