@@ -39,6 +39,7 @@ header {
 header a {
     display: flex;
     text-decoration: none;
+    align-items: center;
 }
 
 .applogo {
@@ -223,6 +224,7 @@ h3 {
     aspect-ratio: 16 / 10;
     margin-bottom: 0.875rem;
     border-radius: 5px;
+    border: 1px solid #BFD7EA;
 }
 
 .article-content {
@@ -505,7 +507,7 @@ footer {
         letter-spacing: 0.02em;
     }
     .easter-egg {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     .hero-article {
         min-height: 440px;
@@ -604,7 +606,8 @@ footer {
 
 /*-------------------- FX --------------------*/
 article.blur,
-footer.blur {
+footer.blur,
+main.blur {
     filter: blur(0.2rem);
     pointer-events: none;
 }

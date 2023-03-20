@@ -1,6 +1,6 @@
 const articleDate = 'October 29, 2022'
 const articleTitle = 'Unit Converter - Metric/Imperial'
-const articleImage = '/images/article5/light-mode - small.jpg'
+const articleImage = '/images/article5/light-mode - small.png'
 
 
 export const article5 =
@@ -71,8 +71,8 @@ export const article5 =
         Ah, and I added Fahrenheit conversion too, cause I needed that one the most haha.
         </p>
         <div class='unit-img'>
-            <img class="article-main-img unit-img" src="/images/article5/light-mode.jpg">
-            <img class="article-main-img unit-img" src="/images/article5/dark-mode.jpg">
+            <img class="article-main-img flex-unit-img" src="/images/article5/light-mode.jpg">
+            <img class="article-main-img flex-unit-img" src="/images/article5/dark-mode.jpg">
         </div>
 
         <h2 class="sub-title">Conclusion</h2>

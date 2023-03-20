@@ -21,6 +21,9 @@ document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", 
     for (let i = 0; i < allArticles.length; i++) {
         allArticles[i].classList.remove("blur")
     }
+    if (document.getElementById('mainCont')){
+        document.getElementById('mainCont').classList.toggle("blur")
+    }
 }))
 
 function responsiveMenu() {
@@ -30,6 +33,11 @@ function responsiveMenu() {
         footerCont[0].classList.toggle("blur")
         for (let i = 0; i < allArticles.length; i++) {
             allArticles[i].classList.toggle("blur")
+        }
+        console.log('ding1')
+        if (document.getElementById('mainCont')){
+            console.log('ding2')
+            document.getElementById('mainCont').classList.toggle("blur")
         }
 }
 

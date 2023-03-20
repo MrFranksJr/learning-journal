@@ -1,6 +1,6 @@
 const articleDate = 'September 14, 2022'
 const articleTitle = 'Franky\'s Business Card'
-const articleImage = '/images/article7/franky.jpg'
+const articleImage = '/images/article7/franky.png'
 
 
 export const article7 =
