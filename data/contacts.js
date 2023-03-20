@@ -1,4 +1,4 @@
-import { emailAddress } from "./data";
+import { emailAddress } from "./data.js";
 
 const buttonsOnContacts = document.getElementById('contact-buttons')
 
