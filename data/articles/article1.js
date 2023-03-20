@@ -49,6 +49,10 @@ export const article1 =
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
+            GitHub Repository <a href='https://github.com/MrFranksJr/chrome-extension' target='_blank' class="articleLink">here</a>
+        </p>
+
+        <p class="articleText">
         I'm currently refreshing my entire JavaScript knowledge through a course on <a class="articleLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a>.<br><br>
         The assignment was to make a simple chrome extension to save for instance your sales leads. I turned the Extension into a shopping list, as when I browser the web sometimes to do some shopping and compare items, I'd like to store them somewhere quick - My Shopping List!
         </p>

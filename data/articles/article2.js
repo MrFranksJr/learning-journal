@@ -54,6 +54,10 @@ export const article2 =
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
+            Live version <a href='https://frbl-oldagram.netlify.app/' target='_blank' class="articleLink">here</a>
+        </p>
+
+        <p class="articleText">
         What if well known artists from times past, were able to take selfies?<br><br>
         The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
         </p>

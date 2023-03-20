@@ -1,17 +1,17 @@
 const articleDate = 'October 30, 2022'
 const articleTitle = 'My Emojis'
-const articleImage = '/images/article4/my-emojis.jpg'
+const appUrl = `https://frankitos.netlify.app/`
 
 
-export const article4 =
-    {
-        id: 4,
-        title: articleTitle,
-        date: articleDate,
-        articleType: 'regular-article',
-        imagePath: articleImage,
-        content: `I will not spend too much time elaborating on this particular project, it was a simple exercise on adding and removing items from an array in JavaScript, but with Emojis :) Go and give it a spin!`,
-        html: `
+export class article4 {
+    constructor() {
+        this.id = 4,
+        this.title = articleTitle,
+        this.date = articleDate,
+        this.articleType = 'regular-article',
+        this.imagePath = `/images/article${this.id}/main.png`,
+        this.content = `I will not spend too much time elaborating on this particular project, it was a simple exercise on adding and removing items from an array in JavaScript, but with Emojis :) Go and give it a spin!`,
+        this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
             <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
@@ -22,7 +22,14 @@ export const article4 =
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
-        Live version <a href='https://frbl-in-emojis.netlify.app/' target='_blank' class="articleLink">here</a>
+        Live version <a href='${appUrl}' target='_blank' class="articleLink">here</a>
+        </p>
+        ` 
+        //URL STOP - ARTICLE start
+        + 
+        `
+        <p class="articleText">
+        BLABLABLABLABLA
         </p>
         <ul class='articleList'>
             <li>Create the first post</li>
@@ -30,6 +37,9 @@ export const article4 =
             <li>Add hover effects on the icons (Like, Comment, Share)</li>
         </ul>
 
-        <img class="article-main-img" src="/images/article5/requirements.png">
+        <img class="article-main-img" src="/images/article${this.id}/requirements.png">
+
+        <h3 class="sub-sub-title">mini-title</h3>
         `
     }
+}
