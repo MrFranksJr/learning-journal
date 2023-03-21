@@ -200,10 +200,10 @@ h2 {
 .reg-art-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     max-width: 1055px;
     box-sizing: border-box;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
 }
 
 .regular-article {
