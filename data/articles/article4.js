@@ -1,6 +1,6 @@
 const articleDate = 'October 30, 2022'
 const articleTitle = 'My Emojis'
-const articleImage = '/images/article4/my-emojis.jpg'
+const articleImage = '/images/article4/main.jpg'
 
 
 export const article4 =

@@ -9,6 +9,8 @@ const allArticles = document.getElementsByTagName('article')
 const footerCont = document.getElementsByTagName('footer')
 const headerCont = document.getElementsByTagName('header')
 const mainCont = document.getElementById('mainCont')
+let articleIndex = 0
+let articleMaxIndex = 6
 
 //------------------------------------------ MENU WORKINGS + STYLINGS------------------------------------------//
 window.addEventListener('click', function(e){
@@ -17,6 +19,7 @@ window.addEventListener('click', function(e){
   }})
 
 hamburgerMenu.addEventListener("click", responsiveMenu)
+
 document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", () => {
     hamburgerMenu.classList.remove("active")
     navMenu.classList.remove("active")
@@ -44,24 +47,12 @@ document.getElementById('year').innerHTML = new Date().getFullYear()
 function collectArticles(articles) {
     let articleGrid = ''
     let heroArticleHTML = ''
-
+    //SORT THE ARTICLES ON DATE
     articles.sort((a,b) => sortByDate(a,b))
-
+    //BUILD HTML
+    console.log(articleMaxIndex)
     for (let article of articles) {
-        if (article.articleType === 'regular-article') {
-            let articleHTML = `
-                <article class="${article.articleType}">
-                    <img class="article-img" src="${article.imagePath}">
-                    <div class="article-text">
-                        <p class="article-date">${article.date}</p>
-                        <h3 class="article-title">${article.title}</h2>
-                        <p class="article-content">${article.content}</p>
-                        <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
-                    </div>
-                </article>
-            `
-            articleGrid += articleHTML
-        } else {
+        if (article.articleType === 'hero-article') {
             heroArticleHTML = `
             <section>
                 <article class="${article.articleType}" id="hero-article">
@@ -75,9 +66,31 @@ function collectArticles(articles) {
             </section>
             `
         }
+        else if (article.articleType === 'regular-article' && articleIndex < articleMaxIndex) {
+            let articleHTML = `
+                <article class="${article.articleType}">
+                    <img class="article-img" src="${article.imagePath}">
+                    <div class="article-text">
+                        <p class="article-date">${article.date}</p>
+                        <h3 class="article-title">${article.title}</h2>
+                        <p class="article-content">${article.content}</p>
+                        <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
+                    </div>
+                </article>
+            `
+            articleGrid += articleHTML
+            articleIndex ++
+        }
     }
-    mainCont.innerHTML = easterEgg + heroArticleHTML + '<section class="reg-art-section">' + articleGrid + '</section>'
+    mainCont.innerHTML = `${easterEgg} ${heroArticleHTML} <section class="reg-art-section">${articleGrid}</section>`
     document.getElementById('hero-article').style.backgroundImage = 'url(../images/hero-article/DeskMain.jpg)'
 }
 
 collectArticles(articles)
+
+document.getElementById('readMoreLink').addEventListener("click", (event) => {
+    event.preventDefault()
+    articleIndex = 0
+    articleMaxIndex += 6
+    collectArticles(articles)
+})
