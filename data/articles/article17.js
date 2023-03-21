@@ -199,78 +199,84 @@ export class article17 {
         </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
-        </p>
+        Luckily, this bug had a really elegant fix, because with the updated swipe feature, I was already tracking where the finger or mouse was! So in fact, I could potentially get rid of the nasty &lt;a&gt; elements, which were a dirty implementation in the first place, imo. I just had to tell the system two things now:
 
         <ul class='articleList'>
-            <li>Create the first post</li>
-            <li>Use semantic HTML</li>
-            <li>Add hover effects on the icons (Like, Comment, Share)</li>
+            <li>was this an actual swipe: meaning, build in a minimum amount of swiping distance, before it's counted as a swipe</li>
+            <li>if it's not a swipe, it's a click</li>
+            <li>if it's a click, where did they click? was it over 50% of the total screen pixel value on the X-axis? or not?</li>
         </ul>
+        </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        Since 90% of the touch code was already in place, it was really easy to add in this extra bit of functionality. And it cleaned the whole thing up by a lot too.
         </p>
 
         <h3 class="sub-sub-title">More dogs!!</h3>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        The app was nearing it's completion ;) Time to add more dogs, and I sent my work around to a couple of people. I luckily have a lot of friends who are crazy about dogs, so it wasn't hard to find some extra ones to put into the app. There's even a rogue cat in there! They didn't get the message I think...
         </p>
         
         <h3 class="sub-sub-title">Optimizations</h3>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        So, now the app was running quite nicely locally. But when testing online on the deployed netlify version, I noticed some of the pictures loaded slowly, when clicking next and previous. Unacceptable by today's standards, so it had to change.
         </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        Changing the size of the images would not change too much, since they weren't too big to begin with. But what if the pictures were already in memory before the user actually clicked next?
+        </p>
+
+        <p class="articleText" style="margin-bottom:0;">
+        So I went on the hunt to make that happen, added this piece of code into the HTML building part:
+            <pre style="margin-bottom:1.5rem;">
+                <code class="language-js">
+                    function preLoadAvatars(avatarArray) {
+                        for (let i=0; i < avatarArray.length; i++) {
+                            const img = new Image()
+                            img.src=avatarArray[i]
+                        }
+                    }
+                </code>
+            </pre>
         </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
-        </p>
-
-        <p class="articleText">
-        CODE BLOCK
-        </p>
-
-        <p class="articleText">
-        BLABLABLABLABLA
+        And it changed the entire experience of the app, even though, the initial loading now probably became a tiny bit slower. This feels a lot better tbh, so I kept it in.
         </p>
 
         <h2 class="sub-title">Future improvements?</h2>
 
         <p class="articleText">
-        BLABLABLABLABLA
-        </p>
+        I now stopped development of this particular assignment, I think I have taken it far enough for now, even though, there's tonnes of extra stuff I could do.
 
         <ul class='articleList'>
-            <li>Create the first post</li>
-            <li>Use semantic HTML</li>
-            <li>Add hover effects on the icons (Like, Comment, Share)</li>
+            <li>allowing people to create their own profile</li>
+            <li>creating a second instance of 'dog' when starting the app. That way, if you swipe, you already catch a glimpse of the next dog behind it. It would make the whole swiping experience a lot nicer.</li>
+            <li>allowing people to upload there own dog: people just kept asking me to add their dog onto the app, so I wanted to allow them to do it themselves :)</li>
         </ul>
-
-        <p class="articleText">
-        BLABLABLABLABLA
         </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        But hey, you can always keep going on a particular project. I'm freezing it for now, in favor of progressing with the course and gain some extra knowledge.
+        </p>
+
+        <p class="articleText">
+        It would be really nice to have an actual database behind it in the future. We'll see...
         </p>
 
         <h2 class="sub-title">Conclusion</h2>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        Tindog was an absolutely awesome assignment and really pushed me further than ever to make the app more fun to use. My creativity got sparked with this one, and I really hope I can maybe make it more advanced in the future.
         </p>
 
         <p class="articleText">
-        BLABLABLABLABLA
+        On to the next! Happy coding!
         </p>
 
-        <img class="article-main-img" src="/images/article${this.id}/requirements.png">
+        <img class="article-main-img" src="/images/article${this.id}/tindog.jpeg">
         `
     }
 }

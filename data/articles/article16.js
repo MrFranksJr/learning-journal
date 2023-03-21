@@ -10,7 +10,7 @@ export class article16 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.png`,
-        this.content = `I will not spend too much time elaborating on this particular project, it was a simple exercise on adding and removing items from an array in JavaScript, but with Emojis :) Go and give it a spin!`,
+        this.content = `Welcome to JavaScriptmas 2022, a daily challenge from the 1st of December 2022 until the 24th. Organized by Scrimba, the organization I'm using to freshen up my JavaScript skills.`,
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>

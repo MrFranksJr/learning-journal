@@ -10,7 +10,7 @@ export const article2 =
         articleType: 'regular-article',
         imagePath: articleImage,
         content: `
-        what if well known artists from times past, were able to take selfies?
+        What if well known artists from times past, were able to take selfies?
 
         The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
         
