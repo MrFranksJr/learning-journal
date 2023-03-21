@@ -1,6 +1,7 @@
 //------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles-collection.js'
 import { easterEgg } from '/data/data.js'
+import { sortByDate } from '/data/utils.js'
 
 const hamburgerMenu = document.getElementById('hamburger')
 const navMenu = document.getElementById('nav-menu')
@@ -43,6 +44,9 @@ document.getElementById('year').innerHTML = new Date().getFullYear()
 function collectArticles(articles) {
     let articleGrid = ''
     let heroArticleHTML = ''
+
+    articles.sort((a,b) => sortByDate(a,b))
+
     for (let article of articles) {
         if (article.articleType === 'regular-article') {
             let articleHTML = `
