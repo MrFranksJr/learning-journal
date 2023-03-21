@@ -10,7 +10,7 @@ export class article18 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.jpeg`,
-        this.content = `I will not spend too much time elaborating on this particular project, it was a simple exercise on adding and removing items from an array in JavaScript, but with Emojis :) Go and give it a spin!`,
+        this.content = `BoredBot is an introductory app, part of Module 8 of the Front-Developer Career Path over at scrimba.com.`,
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>

@@ -175,6 +175,13 @@ article,
     margin: 0 auto;
 }
 
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
 .hero-article {
     min-height: 280px;
     justify-content: flex-end;
