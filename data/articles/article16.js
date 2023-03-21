@@ -14,10 +14,10 @@ export class article16 {
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
-            <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
+            <a href='#' onclick="history.back()" class='date articleLink'><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
 
-        <img class="article-main-img" src="/images/article${this.id}/title.png">
+        <img class="article-main-img" src="/images/article${this.id}/title.png" style="width: 100%; max-width: unset; margin: 1.5rem 0 0 0;">
         <h1 class="main-title">${articleTitle} - an advent calendar of challenges</h1>
 
         <p class="articleText">

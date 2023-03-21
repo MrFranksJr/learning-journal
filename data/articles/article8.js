@@ -16,7 +16,7 @@ export const article8 =
         html: `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
-            <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
+            <a href='#' onclick="history.back()" class='date articleLink'><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
 
         <h1 class="main-title">${articleTitle}</h1>

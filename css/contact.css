@@ -2,13 +2,8 @@ footer {
     display: none;
 }
 
-.contactCont {
-    padding-top: 60px;
-}
-
-h1 {
-    displ
-    margin: 0;
+strong {
+    color: #FF6663;
 }
 
 /*-------------------- MEDIA QUERIES --------------------*/

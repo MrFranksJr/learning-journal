@@ -14,9 +14,10 @@ export class article18 {
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
-            <a href='#' onclick="history.back()" class='date'>&lt;&lt; Back</a>
+            <a href='#' onclick="history.back()" class='date articleLink'><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
 
+        <img class="article-main-img" src="/images/article${this.id}/banner.png" style="width: 100%; max-width: unset; margin: 1.5rem 0 0 0;">
         <h1 class="main-title">${articleTitle} - playing with the BoredAPI</h1>
 
         <h2 class="sub-title">Overview</h2>
@@ -29,17 +30,36 @@ export class article18 {
         + 
         `
         <p class="articleText">
-        BLABLABLABLABLA
+        BoredBot is an introductory app, part of Module 8 of the Front-Developer Career Path over at <a href='https://scrimba.com' target='_blank' class="articleLink">scrimba.com</a>.
         </p>
+
+        <p class="articleText">
+        With this app, we explore the FetchAPI interface and interact with the BoredAPI in order to find us something nice to do.
+        </p>
+
+        <p class="articleText">
+        Below are the topics we covered in this module:
+        </p>
+
+        <img class="article-main-img" src="/images/article${this.id}/topics.png">
+
+        <p class="articleText">
+        All and all a fairly simple app, just to take my first steps into working with APIs.
+        </p>
+
+        <h3 class="sub-sub-title">Some extra's</h3>
+
+        <p class="articleText">
+        I did add a couple of extra's in this app:
+        </p>
+
         <ul class='articleList'>
-            <li>Create the first post</li>
-            <li>Use semantic HTML</li>
-            <li>Add hover effects on the icons (Like, Comment, Share)</li>
+            <li>The logo was generated with Dall E, because why not :)</li>
+            <li>The button relies on an array to feed the user a couple of extra strings of text when they press it.</li>
         </ul>
 
-        <img class="article-main-img" src="/images/article${this.id}/requirements.png">
+        <img class="article-main-img" src="/images/article${this.id}/app.jpeg">
 
-        <h3 class="sub-sub-title">mini-title</h3>
         `
     }
 }

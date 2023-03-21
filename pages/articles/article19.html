@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>My Story - Franky's Learning Journal</title>
+        <title>Franky's Coding Journal</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/articles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
         <link rel="apple-touch-icon" href="/images/apple-touch.png">
         <!-- Google stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/prism.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -27,10 +29,10 @@
                         <a href="/index.html" class="nav-link" alt='home'><i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/journal.html" class="nav-link" alt='Journal'>Journal</a>
+                        <a href="/pages/journal.html" class="nav-link active" alt='Journal'>Journal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/mystory.html" class="nav-link active" alt='my story'>My story</a>
+                        <a href="/pages/mystory.html" class="nav-link" alt='my story'>My story</a>
                     </li>
                     <li class="nav-item">
                         <a href="/pages/mywork.html" class="nav-link" alt='my work'>My work</a>
@@ -46,13 +48,16 @@
                 </div>
             </nav>
         </header>
-        <main id="mainCont" class="introCont">
-            <h2 class="welcomeTitle">My Story</h2>
-            <h3 class="sub-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚧Under construction🚧</h3>
+        <main id="mainCont" class="article-main">
+            <article class="article-body" id="article-body" data-id="19">
+                <p class="loading">Loading content...</p>
+            </article>
         </main>
         <footer>
-            &copy;<span id='year'>2022</span> &#8212; Franky Jr Blondeel
+            &copy;<span id="year"></span> &#8212; Franky Jr Blondeel
         </footer>
-        <script src="/index.js" type="module"></script>       
+        <script src="/index.js" type="module"></script> 
+        <script src="/data/article-builder.js" type="module"></script> 
+        <script src="/data/prism.js" type="module"></script> 
     </body>
 </html>
