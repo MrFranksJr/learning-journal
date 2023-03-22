@@ -1,96 +1,85 @@
 //------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles-collection.js'
 import { easterEgg } from '/data/data.js'
-import { sortByDate } from '/data/utils.js'
+import { sortByDate, getCurrentYear, responsiveMenu, clickAnywhereToClose } from '/data/utils.js'
+import { heroArticle } from "./articles/hero-article.js"
 
 const hamburgerMenu = document.getElementById('hamburger')
-const navMenu = document.getElementById('nav-menu')
-const allArticles = document.getElementsByTagName('article')
-const footerCont = document.getElementsByTagName('footer')
-const headerCont = document.getElementsByTagName('header')
-const mainCont = document.getElementById('mainCont')
+const mainContainer = document.getElementById('mainCont')
 let articleIndex = 0
-let articleMaxIndex = 6
+let articleCurrentIndex = 6
+let articleMaxIndex = articles.length
+let heroArticleHTML = ''
+let articleGrid = ''
 
 //------------------------------------------ MENU WORKINGS + STYLINGS------------------------------------------//
-window.addEventListener('click', function(e){
-    if (!headerCont[0].contains(e.target) && hamburgerMenu.classList.contains('active')){
-    responsiveMenu()
-  }})
+window.addEventListener('click', e => clickAnywhereToClose(e))
 
 hamburgerMenu.addEventListener("click", responsiveMenu)
-
-document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", () => {
-    hamburgerMenu.classList.remove("active")
-    navMenu.classList.remove("active")
-    footerCont[0].classList.remove("blur")
-    for (let i = 0; i < allArticles.length; i++) {
-        allArticles[i].classList.remove("blur")
-    }
-}))
-
-function responsiveMenu() {
-        navMenu.classList.toggle("active")
-        hamburgerMenu.classList.toggle("active")
-        footerCont[0].classList.toggle("blur")
-        for (let i = 0; i < allArticles.length; i++) {
-            allArticles[i].classList.toggle("blur")
-        }
-}
-
-document.getElementById('year').innerHTML = new Date().getFullYear()
-
-
 //-----------------------------------------------------------------------------------------------------------//
 
 //------------------------------------------ PAGE BUILDING ------------------------------------------//
+function renderHeroArticle() {
+    //BUILD HTML
+    heroArticleHTML = `
+        <section>
+            <article class="${heroArticle.articleType}" id="hero-article">
+            <div class="hero-container">
+                <p class="article-date">${heroArticle.date}</p>
+                <h2 class="article-title">${heroArticle.title}</h2>
+                <p class="article-content">${heroArticle.content}</p>
+                <a class="read-more" href="/pages/articles/article${heroArticle.id}.html" alt="read the full article">Read more</a>
+            </div>
+            </article>
+        </section>
+    `
+}
+
 function collectArticles(articles) {
-    let articleGrid = ''
-    let heroArticleHTML = ''
     //SORT THE ARTICLES ON DATE
     articles.sort((a,b) => sortByDate(a,b))
     //BUILD HTML
-    console.log(articleMaxIndex)
-    for (let article of articles) {
-        if (article.articleType === 'hero-article') {
-            heroArticleHTML = `
-            <section>
-                <article class="${article.articleType}" id="hero-article">
-                <div class="hero-container">
-                    <p class="article-date">${article.date}</p>
-                    <h2 class="article-title">${article.title}</h2>
-                    <p class="article-content">${article.content}</p>
-                    <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
-                </div>
-                </article>
-            </section>
-            `
-        }
-        else if (article.articleType === 'regular-article' && articleIndex < articleMaxIndex) {
+    for (let i = articleIndex; articleCurrentIndex > i; i++) {
             let articleHTML = `
-                <article class="${article.articleType}">
-                    <img class="article-img" src="${article.imagePath}">
-                    <div class="article-text">
-                        <p class="article-date">${article.date}</p>
-                        <h3 class="article-title">${article.title}</h2>
-                        <p class="article-content">${article.content}</p>
-                        <a class="read-more" href="/pages/articles/article${article.id}.html" alt="read the full article">Read more</a>
-                    </div>
-                </article>
-            `
-            articleGrid += articleHTML
-            articleIndex ++
-        }
+            <article class="${articles[i].articleType}">
+                <img class="article-img" src="${articles[i].imagePath}">
+                <div class="article-text">
+                    <p class="article-date">${articles[i].date}</p>
+                    <h3 class="article-title">${articles[i].title}</h2>
+                    <p class="article-content">${articles[i].content}</p>
+                    <a class="read-more" href="/pages/articles/article${articles[i].id}.html" alt="read the full article">Read more</a>
+                </div>
+            </article>
+        `
+        articleGrid += articleHTML
+        articleIndex ++
     }
-    mainCont.innerHTML = `${easterEgg} ${heroArticleHTML} <section class="reg-art-section">${articleGrid}</section>`
+    document.getElementById('mainCont').innerHTML = `${easterEgg} ${heroArticleHTML} <section class="reg-art-section">${articleGrid}</section>`
     document.getElementById('hero-article').style.backgroundImage = 'url(../images/hero-article/DeskMain.jpg)'
 }
+//-----------------------------------------------------------------------------------------------------------//
 
+//------------------------------------------ Load when scrolling down ------------------------------------------//
+window.addEventListener('scroll', () => {
+    //check if at bottom
+    let check = (mainContainer.getBoundingClientRect().bottom - window.innerHeight) <= 0
+    //if at bottom...
+    if (check) {
+        if (articleCurrentIndex != articleMaxIndex) {
+            if ((articleMaxIndex - articleCurrentIndex) > 6) {
+                articleCurrentIndex += 6
+                collectArticles(articles)
+            } else {
+                articleCurrentIndex += articleMaxIndex - articleCurrentIndex
+                collectArticles(articles)
+            }
+        }
+    }
+})
+//-----------------------------------------------------------------------------------------------------------//
+
+//------------------------------------------ EXECUTE ------------------------------------------//
+renderHeroArticle()
 collectArticles(articles)
 
-document.getElementById('readMoreLink').addEventListener("click", (event) => {
-    event.preventDefault()
-    articleIndex = 0
-    articleMaxIndex += 6
-    collectArticles(articles)
-})
+getCurrentYear()
