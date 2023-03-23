@@ -1,7 +1,7 @@
 //------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles-collection.js'
 import { easterEgg } from '/data/data.js'
-import { sortByDate, getCurrentYear, responsiveMenu, clickAnywhereToClose } from '/data/utils.js'
+import { sortByDate, getCurrentYear, responsiveMenu, clickAnywhereToClose, showJournalContent } from '/data/utils.js'
 import { heroArticle } from "./articles/hero-article.js"
 
 const hamburgerMenu = document.getElementById('hamburger')
@@ -83,3 +83,7 @@ renderHeroArticle()
 collectArticles(articles)
 
 getCurrentYear()
+
+window.addEventListener('load', function () {
+    showJournalContent()
+}) 

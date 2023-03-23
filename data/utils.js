@@ -1,4 +1,4 @@
-export { responsiveMenu, sortByDate, getCurrentYear, clickAnywhereToClose }
+export { responsiveMenu, sortByDate, getCurrentYear, clickAnywhereToClose, showIndexContent, showJournalContent, showArticleContent }
 
 //responsive menu add visual style
 function responsiveMenu() {
@@ -51,4 +51,28 @@ function sortByDate(a, b) {
 //enter current year
 function getCurrentYear() {
     document.getElementById('year').innerHTML = new Date().getFullYear()
+}
+
+//make index.html appear
+function showIndexContent() {
+    const introductionRight = document.getElementById('introductionRight')
+    const welcomeTitle = document.getElementById('welcomeTitle')
+    introductionRight.style.transform = 'translateY(0px)'
+    introductionRight.style.opacity = '1'
+    welcomeTitle.style.transform = 'translateY(0px)'
+    welcomeTitle.style.opacity = '1'
+}
+
+//make journal.html appear
+function showJournalContent() {
+    const mainCont = document.getElementById('mainCont')
+    mainCont.style.transform = 'translateY(0px)'
+    mainCont.style.opacity = '1'
+}
+
+//make articles appear
+function showArticleContent() {
+    const mainCont = document.getElementById('mainCont')
+    mainCont.style.transform = 'translateY(0px)'
+    mainCont.style.opacity = '1'
 }

@@ -34,6 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: height 0.2s ease;
 }
 
 header a {
@@ -110,7 +111,7 @@ header a {
     padding: 0;
     margin: 0;
     font-size: 1.15rem;
-    transition: 0.4s;
+    transition: right 0.4s;
 }
 
 .nav-item {
@@ -152,16 +153,21 @@ header a {
 
 /*-------------------- MAIN --------------------*/
 main {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 0px;
     align-items: center;
     flex-grow: 1;
+}
+
+.journalCont {
+    transition: opacity 0.3s ease-in 0.1s, transform 0.4s ease-in-out;
 }
 
 section {
     width: 100%;
 }
 
-main,
 article,
 .hero-container {
     display: flex;
@@ -328,14 +334,16 @@ footer {
     padding: 3rem 2.5rem;
     box-sizing: border-box;
     text-align: center;
-    min-height: ;
+    transition: opacity 0.3s ease-in 0.1s, transform 0.4s ease-in-out;
 }
 
 .profilePic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    transition: 0.2s;
+    transition-property: width, height;
+    transition-duration:0.2s, 0.2s;
+    transition-timing-function:ease-in-out;
 }
 
 .introTitle {
@@ -355,6 +363,7 @@ footer {
     text-shadow: #0B3954 2px 1px;
     text-transform: uppercase;
     font-weight: 400;
+    transition: opacity 0.3s ease-in 0.1s, transform 0.3s ease-in;
 }
 .strong {
     font-weight: 800;
@@ -427,7 +436,6 @@ footer {
         padding: 0;
         margin: 0;
         height: 3.75rem;
-        transition: 0.2s ease;
         display: flex;
         align-items: center;
     }
@@ -436,10 +444,9 @@ footer {
         padding: 0 20px;
         line-height: 3.75rem;
         color: #FEFFFE;
-        background: linear-gradient(to bottom, #E0FF4F 50%, #0B3954 50%);
+        background-color: #0B3954;
+        background: linear-gradient(to top, #0B3954 50%, #E0FF4F 50%) left bottom;
         background-size: 100% 200%;
-        background-position:left bottom;
-        transition:all 0.2s ease;
     }
 
     .nav-link.active {
@@ -448,7 +455,8 @@ footer {
     
     .nav-link:hover,
     .nav-link:focus {
-        background-position:right top;
+        background-position:left top;
+        transition:background-position 0.2s ease;
         color: #0B3954;
     }
     .nav-link.active:hover {
@@ -475,7 +483,6 @@ footer {
     /*--------- HOME PAGE -----------*/
     .introCont {
         flex-direction: row;
-        height: 100%;
         margin-top: 60px;
         height: calc(100vh - 60px);
     }
