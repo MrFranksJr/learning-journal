@@ -1,7 +1,7 @@
-const articleDate = 'November 29, 2022'
-const articleTitle = 'Street Triple Dreams - a first responsive experience'
+const articleDate = 'November 30, 2022'
+const articleTitle = 'Franky.fast - a responsive splashpage'
 const articleImage = '/images/article13/main.png'
-const appUrl = `https://triumph-responsive.netlify.app/`
+const appUrl = `https://fastfranky.netlify.app/`
 
 
 export class article13 {
@@ -10,8 +10,8 @@ export class article13 {
         this.title = articleTitle,
         this.date = articleDate,
         this.articleType = 'regular-article',
-        this.imagePath = articleImage,
-        this.content = `So I've been working on mobile webdesign these last couple of weeks... Progress has been slower than usual (a lot happening in life). Either way, I've set the first steps using media queries, relative units (em, rem, percentages) as well as more extensive Flexbox features (flex-wrap/gap).`,
+        this.imagePath = `/images/article${this.id}/main.png`,
+        this.content = `This next assignment was another small splash/webpage with mobile support. I extended my knowledge and learnt about the viewport (which I was actually already using), transforming text, ordering flexbox items. Box sizing was also taught in this module, but I wouldn't have been able to complete many of my previous assignments without this one`,
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
@@ -27,24 +27,15 @@ export class article13 {
         </p>
 
         <p class="articleText">
-        So I've been working on mobile webdesign these last couple of weeks... Progress has been slower than usual (a lot happening in life). Either way, I've set the first steps using media queries, relative units (em, rem, percentages) as well as more extensive Flexbox features (flex-wrap/gap).
-        </p>
-
-        <p class="articleText">
-        On top of everything else, this was just a very good exercise in 'mobile-first' thinking. Which I feel is probably the best way to go about many webdesign assignments these days.
+        This next assignment was another small splash/webpage with mobile support. I extended my knowledge and learnt about the viewport (which I was actually already using), transforming text, ordering flexbox items. Box sizing was also thaught in this module, but I wouldn't have been able to complete many of my previous assignments without this one 😉
         </p>
         <img class="article-main-img" src="/images/article${this.id}/concepts.png">
 
         <p class="articleText">
-        The result is a very simple 1-pager, which scales the photos, text and buttons to a certain degree, before going to a full mobile layout when the screen is narrow enough. Notice also the menu changing on the top to a more manageable size on mobile.
+        So in the end, resulting in quite a simple splashpage, which switches flex-directions based on the screen width. And also a deeper dive in formatting input fields and forms, which is something I desperately needed.
         </p>
-
-        <p class="articleText">
-        I tried playing around with some other stuff too on this one :) Since this is about motorcycles, I wanted to have the sound on the page. But I thought it would be really nice to have some equalizer or something on the screen when users click to play the sound. This was all canvas stuff, and I got some 'prototype' working based on a youtube video. But it was a bit too much to dive into now, and especially if I wanted to get it to play nicely with mobile too. So, skipping for now! In favor of progress, because honestly, I'm missing Javascript already.
-        </p>
-
         <img class="article-main-img" src="/images/article${this.id}/desktop.png">
         <img class="article-main-img" src="/images/article${this.id}/mobile.png">
         `
     }
-    }
+}

@@ -1,6 +1,6 @@
-const articleDate = 'September 28, 2022'
-const articleTitle = 'Basketball Counter'
-const articleImage = '/images/article6/appjournal.jpg'
+const articleDate = 'September 14, 2022'
+const articleTitle = 'Franky\'s Business Card'
+const articleImage = '/images/article6/franky.png'
 
 
 export const article6 =
@@ -10,14 +10,10 @@ export const article6 =
         date: articleDate,
         articleType: 'regular-article',
         imagePath: articleImage,
-        content: `The assignment was to make a simple scoreboard for a basketball game
+        content: `This is one of my first projects, obviously not too much to see here. Just a basic experiment with some HTML and CSS, to get back in the groove
         
-        I wanted to take it a tiny bit further:
-
-        - I added a clock, that counts down periods.
-        - Periods indicators are added
-        - Extra counters, for fouls
-        - Indicators of who is winning.
+        Live version
+        Find it here
         `,
         html: `
         <div class='date-back-block'>
@@ -30,23 +26,15 @@ export const article6 =
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
-        Live version <a href='https://basketball-counter-frbl.netlify.app/' target='_blank' class="articleLink">here</a>
+        This is one of my first projects, obviously not too much to see here. Just a basic experiment with some HTML and CSS, to get back in the groove.
         </p>
+
+        <h2 class="sub-title">Live version</h2>
 
         <p class="articleText">
-        The assignment was to make a simple scoreboard for a basketball game
+        Live version <a href='https://frbl-business-card.netlify.app/' target='_blank' class="articleLink">here</a>
         </p>
 
-        <p class="articleText">
-        I wanted to take it a tiny bit further:
-        </p>
-        <ul class='articleList'>
-            <li>I added a clock, that counts down periods.</li>
-            <li>Periods indicators are added</li>
-            <li>Extra counters, for fouls</li>
-            <li>Indicators of who is winning.</li>
-        </ul>
-
-        <img class="article-main-img" src="/images/article6/app.jpg">
+        <img class="article-main-img" src="${articleImage}">
         `
     }

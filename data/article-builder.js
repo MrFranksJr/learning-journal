@@ -1,6 +1,6 @@
-//------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles-collection.js'
-import { showArticleContent, getCurrentYear, responsiveMenu } from './utils.js'
+import { heroArticle } from './articles/hero-article.js'
+import { showArticleContent, getCurrentYear, responsiveMenu, clickAnywhereToClose } from './utils.js'
 
 //------------------------------------------CONSTS------------------------------------------//
 const hamburgerMenu = document.getElementById('hamburger')
@@ -12,9 +12,13 @@ window.addEventListener('click', e => clickAnywhereToClose(e))
 hamburgerMenu.addEventListener("click", responsiveMenu)
 //----------------------------------------------------------------------------------------------------//
 
-
 function buildArticle() {
-    articleBody.innerHTML = articles[articleBody.dataset.id].html
+    if (articleBody.dataset.id === '0') {
+        articleBody.innerHTML = heroArticle.html
+    }
+    else {
+        articleBody.innerHTML = articles[articleBody.dataset.id].html
+    }
 }
 
 buildArticle()

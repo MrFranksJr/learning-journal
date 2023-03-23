@@ -1,6 +1,6 @@
-const articleDate = 'September 14, 2022'
-const articleTitle = 'Franky\'s Business Card'
-const articleImage = '/images/article7/franky.png'
+const articleDate = 'September 26, 2022'
+const articleTitle = 'Emergency Counter'
+const articleImage = '/images/article7/counterJournal.jpg'
 
 
 export const article7 =
@@ -10,11 +10,9 @@ export const article7 =
         date: articleDate,
         articleType: 'regular-article',
         imagePath: articleImage,
-        content: `This is one of my first projects, obviously not too much to see here. Just a basic experiment with some HTML and CSS, to get back in the groove
-        
-        Live version
-        Find it here
-        `,
+        content: `Emergency Counter is a very simple page, with a counter on it (part of the Scrimba courses) Objective was to just build a simple counter.
+
+        I live very close to an ambulance / fire truck depot. I decided to build a counter that counts every single one of the vehicles that passes by :)`,
         html: `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
@@ -26,15 +24,17 @@ export const article7 =
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
-        This is one of my first projects, obviously not too much to see here. Just a basic experiment with some HTML and CSS, to get back in the groove.
+        Emergency Counter is a very simple page, with a counter on it (part of the <a href='https://scrimba.com/' target='_blank' class="articleLink">Scrimba</a> courses) Objective was to just build a simple counter.
+
+        I live very close to an ambulance / fire truck depot. I decided to build a counter that counts every single one of the vehicles that passes by :)
         </p>
 
         <h2 class="sub-title">Live version</h2>
-
+        
         <p class="articleText">
-        Live version <a href='https://frbl-business-card.netlify.app/' target='_blank' class="articleLink">here</a>
+        Live version <a href='https://emergencycounter.netlify.app/' target='_blank' class="articleLink">here</a>
         </p>
 
-        <img class="article-main-img" src="${articleImage}">
+        <img class="article-main-img" src="/images/article7/counter.jpg">
         `
     }

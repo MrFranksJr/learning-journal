@@ -1,7 +1,6 @@
-const articleDate = 'October 24, 2022'
-const articleTitle = 'My Shopping List - First Chrome Extension'
-const articleImage = '/images/article1/my-shopping-list.png'
-
+const articleDate = 'October 26, 2022'
+const articleTitle = 'Oldagram - Instagram Clone'
+const articleImage = '/images/article1/app_screen.jpg'
 
 export const article1 =
     {
@@ -10,93 +9,116 @@ export const article1 =
         date: articleDate,
         articleType: 'regular-article',
         imagePath: articleImage,
-        content: `I'm currently refreshing my entire JavaScript knowledge through a course on Scrimba The assignment was to make a simple chrome extension to save for instance your sales leads. I turned the Extension into a shopping list, as when I browser the web sometimes to do some shopping and compare items, I'd like to store them somewhere quick - My Shopping List!
+        content: `
+        What if well known artists from times past, were able to take selfies?
 
+        The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
+        
+        The assignment was mostly an exercise in CSS. But I definitely decided to keep on practicing my Javascript and applied a lot of the functionality we practiced in some of the previous lessons.
+        
         The following were the base requirements of the assignment:
         
-        Create a simple button that read content from the input field available
-        Create a button that reads the URL of the visible active tab and store it
-        Store the data in the 'backend' localstorage
-        Make the data visible in a
-        All of the goals above were achieved, but I went a little bit beyond.
+        Create the first post
+        Use semantic HTML
+        Add hover effects on the icons (Like, Comment, Share)
         
-        Extra goals that I achieved:
+        The following were the Stretch goals:
         
-        When hovering over the items, you can delete items one-by-one. It was a little bit tricky, but managed in the end.
-        An automated check for HTTP or HTTPS in the input field. Because this extension runs locally, and when you leave out HTTP, the link posted in the list would actually not work correctly. So, before adding the Input value to the list, HTTPS is added when HTTP or HTTPS is missing from the string
-        Added a function to detect the return key. It just makes life easier to just hit return and add your item to the list!
-        screenshot of the extension
+        Use Javascript to render out all three posts
+        Increase the likes when double clicking the post
         
-        Development
-        The most important part of this exercise was learning to create better, cleaner JS (I feel). Things included:
         
-        Working better with arrays
-        Working with the LocalStorage (laying the groundwork for future backend/database interaction I assume)
-        Adding eventlisteners in your JS instead of in the HTML
-        Properly using consts where needed, instead of let
-        Adjust the HTML via JS (and be conscious about using it!)
-        Using Parameters for functions (although I already liked using that before ;)
-        Template strings! Amazing way of writing HTML inside your JS, and escaping out of the string using \${}
-        Touching on JSON, used a lot in webdevelopment when storing/handling data
+        It was a given that I wanted to immediately render all posts using Javascript... All posts are coming from an array of Objects.
+        
+        Given some of the previous lessons, I borrowed some stuff from the chrome extension class Extra goals that I achieved:
+        
+        The like system is extended:
+        When clicking the heart- icon, the system shows a string 'You and XXX others like this' and later revert to the sum of all Like
+        'Over-liking' is not possible. It is possible to unlike a picture when clicking the heart again
+        
+        The posts themselves are initially loaded in from an array of Objects. However, the first thing I do is store all posts inside the LocalStorage.
+        I actually wanted to extend the initial array to allow people to add extra posts or comments or something. I left this behind, and did not implement it.
+        The second time you load the page, the posts are loaded from LocalStorage.
+        The data in the Objects were extended to hold the Likes. This was necessary to have some place to actually store the likes you have given (which the app will do).
+        Double-click eventlistener on the pics: It is possible to like the pics by double-clicking or double-tapping. Unliking is not possible via double-tap, which is by design.
+        Added some extra posts, not that this is a notable achievement.
+        
         Conclusion
-        I've got to say; this exercise was super-interesting. The app itself is not that fancy but the concepts shown and explained during this course are CRUCIAL to a future as a web developer. I loved the way everything was explained, how the concepts are explained and how you eventually reach the end result. I feel like I retain so much information and I cannot state enough how impressed I am with the Scrimba course!!`,
+        This was by far the most fun application to build. Both from a technical as a creative perspective. I feel like I'm quickly improving on many different fronts, further proving it is important to program every day, even if it's just a couple of lines ;)`,
         html: `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
             <a href='#' onclick="history.back()" class='date articleLink'><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
-        <h1 class="main-title">My Shopping List - First Chrome Extension</h1>
+        <h1 class="main-title">${articleTitle}</h1>
         <h2 class="sub-title">Overview</h2>
 
         <p class="articleText">
-            GitHub Repository <a href='https://github.com/MrFranksJr/chrome-extension' target='_blank' class="articleLink">here</a>
+            Live version <a href='https://frbl-oldagram.netlify.app/' target='_blank' class="articleLink">here</a>
         </p>
 
         <p class="articleText">
-        I'm currently refreshing my entire JavaScript knowledge through a course on <a class="articleLink" href="https://scrimba.com" target="_blank" alt="go to scrimba.com">scrimba.com</a>.<br><br>
-        The assignment was to make a simple chrome extension to save for instance your sales leads. I turned the Extension into a shopping list, as when I browser the web sometimes to do some shopping and compare items, I'd like to store them somewhere quick - My Shopping List!
+        What if well known artists from times past, were able to take selfies?<br><br>
+        The assignment was to make an Instagram clone called 'Oldagram'. We all like selfies. Some famous painters in the past were way ahead of the curve and made their own classic hand-painted selfies. Hence: Oldagram.
         </p>
 
-        <img class="article-main-img" src="${articleImage}">
+        <img class="article-main-img" id='oldagram-img' src="/images/article1/app_screen_full.jpg">
+
+        <p class="articleText">
+            The assignment was mostly an exercise in CSS. But I definitely decided to keep on practicing my Javascript and applied a lot of the functionality we practiced in some of the previous lessons.
+        </p>
 
         <p class="articleText">
         The following were the base requirements of the assignment:</p>
         <ul class='articleList'>
-            <li>Create a simple button that read content from the input field available</li>
-            <li>Create a button that reads the URL of the visible active tab and store it</li>
-            <li>Store the data in the 'backend' localstorage</li>
-            <li>Make the data visible in a &lt;ul&gt;</pre> </li>
+            <li>Create the first post</li>
+            <li>Use semantic HTML</li>
+            <li>Add hover effects on the icons (Like, Comment, Share)</li>
         </ul>
+        <img class="article-main-img" src="/images/article1/requirements.png">
 
         <p class="articleText">
-        All of the goals above were achieved, but I went a little bit beyond.
+        The following were the Stretch goals:
+        </p>
+        <ul class='articleList'>
+            <li>Use Javascript to render out all three posts</li>
+            <li>Increase the likes when double clicking the post</li>
+        </ul>
+        <img class="article-main-img" src="/images/article1/stretch-goals.png">
+
+        <p class="articleText">
+            It was a given that I wanted to immediately render all posts using Javascript... All posts are coming from an array of Objects.
         </p>
 
-        <p class="articleText">
-        Extra goals that I achieved:</p>
-        <ul class='articleList'>
-            <li>When hovering over the items, you can delete items one-by-one. It was a little bit tricky, but managed in the end.</li>
-            <li>An automated check for HTTP or HTTPS in the input field. Because this extension runs locally, and when you leave out HTTP, the link posted in the list would actually not work correctly. So, before adding the Input value to the list, HTTPS is added when HTTP or HTTPS is missing from the string</li>
-            <li>Added a function to detect the return key. It just makes life easier to just hit return and add your item to the list!</li>
-        </ul>
 
-        <h2 class="sub-title">Development</h2>
         <p class="articleText">
-        The most important part of this exercise was learning to create better, cleaner JS (I feel). Things included:</p>
+        Given some of the previous lessons, I borrowed some stuff from the chrome extension class Extra goals that I achieved:
+        </p>
         <ul class='articleList'>
-            <li>Working better with arrays </li>
-            <li>Working with the LocalStorage (laying the groundwork for future backend/database interaction I assume) </li>
-            <li>Adding eventlisteners in your JS instead of in the HTML</li>
-            <li>Properly using consts where needed, instead of let</li>
-            <li>Adjust the HTML via JS (and be conscious about using it!)</li>
-            <li>Using Parameters for functions (although I already liked using that before ;)</li>
-            <li>Template strings! Amazing way of writing HTML inside your JS, and escaping out of the string using \${}</li>
-            <li>Touching on JSON, used a lot in webdevelopment when storing/handling data</li>
+            <li>The like system is extended:
+                <ul>
+                    <li>When clicking the heart- icon, the system shows a string 'You and XXX others like this' and later revert to the sum of all Like</li>
+                    <li>'Over-liking' is not possible. It is possible to unlike a picture when clicking the heart again</li>
+                </ul>
+                <img class="list-img" src="/images/article1/like-system1.jpg">
+                <img class="list-img" src="/images/article1/like-system2.jpg">
+                <img class="list-img" src="/images/article1/like-system3.jpg">
+            </li>
+            <li>The posts themselves are initially loaded in from an array of Objects. However, the first thing I do is store all posts inside the LocalStorage.
+                <ul>
+                    <li>I actually wanted to extend the initial array to allow people to add extra posts or comments or something. I left this behind, and did not implement it.</li>
+                    <li>The second time you load the page, the posts are loaded from LocalStorage.</li>
+                </ul>
+            </li>
+            <li>The data in the Objects were extended to hold the Likes. This was necessary to have some place to actually store the likes you have given (which the app will do).</li>
+            <li>Double-click eventlistener on the pics: It is possible to like the pics by double-clicking or double-tapping. Unliking is not possible via double-tap, which is by design.</li>
+            <li>Added some extra posts, not that this is a notable achievement.</li>
         </ul>
 
         <h2 class="sub-title">Conclusion</h2>
+
         <p class="articleText">
-        I've got to say; this exercise was super-interesting. The app itself is not that fancy but the concepts shown and explained during this course are CRUCIAL to a future as a web developer. I loved the way everything was explained, how the concepts are explained and how you eventually reach the end result. I feel like I retain so much information and I cannot state enough how impressed I am with the Scrimba course!!
+        This was by far the most fun application to build. Both from a technical as a creative perspective. I feel like I'm quickly improving on many different fronts, further proving it is important to program every day, even if it's just a couple of lines ;)
         </p>
         `
     }
