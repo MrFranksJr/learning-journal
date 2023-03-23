@@ -60,7 +60,7 @@ a.date:focus {
 
 .articleLink:hover {
     background: linear-gradient(transparent 40%, #E0FF4F 41%, #E0FF4F 66%, transparent 67%);
-    background-position:2px 4px;
+    background-position:3px 4px;
     background-repeat:no-repeat;
 }
 
