@@ -1,7 +1,7 @@
 //------------------------------------------CONSTS------------------------------------------//
 import { articles } from '/data/articles-collection.js'
 import { easterEgg } from '/data/data.js'
-import { sortByDate, getCurrentYear, responsiveMenu, clickAnywhereToClose, showJournalContent } from '/data/utils.js'
+import { sortByDate, getCurrentYear, responsiveMenu, clickAnywhereToClose, showJournalContent, resizeClose } from '/data/utils.js'
 import { heroArticle } from "./articles/hero-article.js"
 
 const hamburgerMenu = document.getElementById('hamburger')
@@ -86,4 +86,10 @@ getCurrentYear()
 
 window.addEventListener('load', function () {
     showJournalContent()
-}) 
+})
+
+window.addEventListener("resize", () => {
+    if (document.body.clientWidth >= 880) {
+        resizeClose()
+    }
+})
