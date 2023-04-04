@@ -10,7 +10,7 @@ export class article17 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.jpeg`,
-        this.content = `BoredBot is an introductory app, part of Module 8 of the Front-Developer Career Path over at scrimba.com.`,
+        this.content = `BoredBot is an introductory app, part of Module 9 of the Front-Developer Career Path over at scrimba.com.`,
         this.html = `
         <div class='date-back-block'>
             <p class="date">${articleDate}</p>
@@ -30,7 +30,7 @@ export class article17 {
         + 
         `
         <p class="articleText">
-        BoredBot is an introductory app, part of Module 8 of the Front-Developer Career Path over at <a href='https://scrimba.com' target='_blank' class="articleLink">scrimba.com</a>.
+        BoredBot is an introductory app, part of module 9 of the Front-Developer Career Path over at <a href='https://scrimba.com' target='_blank' class="articleLink">scrimba.com</a>.
         </p>
 
         <p class="articleText">

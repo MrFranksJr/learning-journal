@@ -10,7 +10,7 @@ export class article21 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.png`,
-        this.content = `Game of War is a little card game app I developed as part of Module 8 of the Front-Developer Career Path over at scrimba.com. It focuses on using API calls, this time using the Deck of Cards API.
+        this.content = `Game of War is a little card game app I developed as part of module 9 of the Front-Developer Career Path over at scrimba.com. It focuses on using API calls, this time using the Deck of Cards API.
 
         The entire idea was to get more familiar with aync JavaScript and how to work with Promises, an extensive section about callback functions. To better understand these subjects, we even built our own .filter() clone.`,
         this.html = `
@@ -32,7 +32,7 @@ export class article21 {
         + 
         `
         <p class="articleText">
-        Game of War is a little <a href='https://www.youtube.com/watch?v=yX-jOVer758' target='_blank' class="articleLink">card game app</a> I developed as part of Module 8 of the Front-Developer Career Path over at <a href='https://www.scrimba.com' target='_blank' class="articleLink">scrimba.com</a>. It focuses on using API calls, this time using the <a href='https://deckofcardsapi.com/' target='_blank' class="articleLink">Deck of Cards API</a>.
+        Game of War is a little <a href='https://www.youtube.com/watch?v=yX-jOVer758' target='_blank' class="articleLink">card game app</a> I developed as part of module 9 of the Front-Developer Career Path over at <a href='https://www.scrimba.com' target='_blank' class="articleLink">scrimba.com</a>. It focuses on using API calls, this time using the <a href='https://deckofcardsapi.com/' target='_blank' class="articleLink">Deck of Cards API</a>.
         </p>
 
         <p class="articleText">

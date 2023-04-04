@@ -10,7 +10,7 @@ export class article19 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.png`,
-        this.content = `BlogSpace is a little app app, part of Module 8 of the Front-Developer Career Path over at scrimba.com. With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.`,
+        this.content = `BlogSpace is a little app app, part of module 9 of the Front-Developer Career Path over at scrimba.com. With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.`,
         this.html = `
         <img class="banner" src="/images/article${this.id}/banner.png">
         <div class='date-back-block'>
@@ -30,7 +30,7 @@ export class article19 {
         + 
         `
         <p class="articleText">
-        BlogSpace is a little app app, part of Module 8 of the Front-Developer Career Path over at scrimba.com. With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.
+        BlogSpace is a little app app, part of module 9 of the Front-Developer Career Path over at scrimba.com. With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.
         </p>
 
         <p class="articleText">

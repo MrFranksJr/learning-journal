@@ -10,7 +10,7 @@ export class article20 {
         this.date = articleDate,
         this.articleType = 'regular-article',
         this.imagePath = `/images/article${this.id}/main.png`,
-        this.content = `colorpal is a little app app I developed as part of Module 8 of the Front-Developer Career Path over at scrimba.com. It focuses on using API calls, this time using the ColorAPI. It's an app with a similar purpose as for instance coolors.co, where you can quickly generate a nice matching set of colors, based on some algorithm of choice.`,
+        this.content = `colorpal is a little app app I developed as part of module 9 of the Front-Developer Career Path over at scrimba.com. It focuses on using API calls, this time using the ColorAPI. It's an app with a similar purpose as for instance coolors.co, where you can quickly generate a nice matching set of colors, based on some algorithm of choice.`,
         this.html = `
         <img class="banner" src="/images/article${this.id}/banner.png">
         <div class='date-back-block'>
@@ -30,7 +30,7 @@ export class article20 {
         + 
         `
         <p class="articleText">
-        colorpal is a little app app I developed as part of Module 8 of the Front-Developer Career Path over at <a href='https://scrimba.com' target='_blank' class="articleLink">scrimba.com</a>. It focuses on using API calls, this time using the <a href='https://www.thecolorapi.com/' target='_blank' class="articleLink">ColorAPI</a>. It's an app with a similar purpose as for instance <a href='https://coolors.co' target='_blank' class="articleLink">coolors.co</a>, where you can quickly generate a nice matching set of colors, based on some algorithm of choice.
+        colorpal is a little app app I developed as part of module 9 of the Front-Developer Career Path over at <a href='https://scrimba.com' target='_blank' class="articleLink">scrimba.com</a>. It focuses on using API calls, this time using the <a href='https://www.thecolorapi.com/' target='_blank' class="articleLink">ColorAPI</a>. It's an app with a similar purpose as for instance <a href='https://coolors.co' target='_blank' class="articleLink">coolors.co</a>, where you can quickly generate a nice matching set of colors, based on some algorithm of choice.
         </p>
 
         <p class="articleText">
