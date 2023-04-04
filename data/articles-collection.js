@@ -19,6 +19,7 @@ import { article17 } from "./articles/article17.js"
 import { article18 } from "./articles/article18.js"
 import { article19 } from "./articles/article19.js"
 import { article20 } from "./articles/article20.js"
+import { article21 } from "./articles/article21.js"
 
 export const articles = [
     article0,
@@ -42,4 +43,5 @@ export const articles = [
     new article18(),
     new article19(),
     new article20(),
+    new article21(),
 ]

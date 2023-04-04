@@ -1,4 +1,4 @@
-const articleDate = 'October 30, 2022'
+const articleDate = 'April 4, 2023'
 const articleTitle = 'My Emojis'
 const appUrl = `https://frankitos.netlify.app/`
 
